@@ -183,8 +183,8 @@ body.detail-open #twAbout,body.detail-open #aiAbout{display:none!important}
   <div class="rows">
     <b>方向</b><span>新媒体内容 / 文旅内容 / AI 内容</span>
     <b>学校</b><span>河北传媒学院　播音与主持艺术（兼修 AI 产品设计研发）</span>
-    <b>电话</b><span>17794236920</span>
-    <b>邮箱</b><span>528602496@qq.com</span>
+    <b>电话</b><span><a href="tel:+8617794236920">17794236920</a></span>
+    <b>邮箱</b><span><a href="mailto:528602496@qq.com?subject=%E9%9D%A2%E8%AF%95%E9%82%80%E7%BA%A6%EF%BC%9A%E6%95%8F%E5%BB%BA%E5%93%B2">528602496@qq.com</a></span>
     <b>账号</b><span>抖音 @Esa_M（文旅）／@Again（AI 头像）</span>
     <b>一句话</b><span>两个账号，一个人，没有团队，没有投放。</span>
   </div>
@@ -788,8 +788,8 @@ function backToHome(){
       <div class="rows">
         <div><b>学校</b>河北传媒学院 · 播音主持艺术（兼修 AI 产品设计与研发）</div>
         <div><b>账号</b>抖音 @Esa_M（文旅）／@Again（AI 头像）</div>
-        <div><b>电话</b>17794236920</div>
-        <div><b>邮箱</b>528602496@qq.com</div>
+        <div><b>电话</b><a href="tel:+8617794236920">17794236920</a></div>
+        <div><b>邮箱</b><a href="mailto:528602496@qq.com">528602496@qq.com</a></div>
         <div><b>一句话</b>两个账号，一个人，没有团队，没有投放。</div>
       </div>
     </div>
@@ -1242,7 +1242,7 @@ function openTravelAbout(){ openXAbout('travel'); }
     home:{title:'敏建哲',tag:'新 媒 体 内 容　·　文 旅 / A I',rows:[
       '<b>学校</b>河北传媒学院 · 播音主持艺术（兼修 AI 产品设计与研发）',
       '<b>账号</b>抖音 @Esa_M（文旅）／@Again（AI 头像）',
-      '<b>电话</b>17794236920　·　528602496@qq.com',
+      '<b>电话</b><a href="tel:+8617794236920">17794236920</a>　·　<a href="mailto:528602496@qq.com">528602496@qq.com</a>',
       '<b>一句话</b>两个账号，一个人：选题、拍摄、剪辑、配乐、发布，没有团队，没有投放。'],
       qrs:[{src:QR_TRAVEL,label:'文旅号 @Esa_M'},{src:QR_AI,label:'AI 号 @Again'}]},
     travel:{title:'@Esa_M',tag:'文 旅 内 容　·　独 立 运 营',rows:[
@@ -1602,6 +1602,9 @@ function aiStep(dir){
 .hm-bl p{font-size:max(13px,2.67vh)}
 .marquee span{font-size:max(7px,1.06vh)}
 .hintline{font-size:max(7px,1.02vh)}
+
+a[href^="tel:"],a[href^="mailto:"]{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+a[href^="tel:"]:hover,a[href^="mailto:"]:hover{text-decoration:underline;text-underline-offset:3px}
 
 #aiRadar .box{width:560px;height:560px;margin-top:64px}
 #aiRadar .big{top:44px}
